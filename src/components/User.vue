@@ -4,14 +4,19 @@
         <p>I'm an awesome User!</p>
         <button @click="changeName">Change my name</button>
         <p>Name is {{ name }}</p>
+        <p>Age is {{ age }}</p>
         <hr>
+        <!-- row class below is the parent component, user detail and user edit are chils components -->
         <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <app-user-detail :myName="name" @nameWasReset="name = $event" :resetFnc="resetName"></app-user-detail>
+
+            <div class="col-xs-12 col-sm-6"> 
+                <app-user-detail :myName="name" @nameWasReset="name = $event" :resetFnc="resetName" :userAge="age"></app-user-detail>
             </div>
+
             <div class="col-xs-12 col-sm-6">
-                <app-user-edit :userAge="age"></app-user-edit>
+                <app-user-edit :userAge="age" @ageWasEdited="age = $event"></app-user-edit>
             </div>
+
         </div>
     </div>
 </template>
