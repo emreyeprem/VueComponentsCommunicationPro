@@ -22,5 +22,6 @@
     div.component {
         border: 1px solid black;
         padding: 30px;
+        margin-top: 30px;
     }
 </style>
