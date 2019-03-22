@@ -6,7 +6,7 @@
         <p>Name is {{ name }}</p>
         <p>Age is {{ age }}</p>
         <hr>
-        <!-- row class below is the parent component, user detail and user edit are chils components -->
+        <!-- user.vue / component class is the parent component, user detail and user edit are chils components -->
         <div class="row">
 
             <div class="col-xs-12 col-sm-6"> 
