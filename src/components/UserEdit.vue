@@ -16,8 +16,8 @@
             editAge() {
                 this.userAge = 30
                // this.$emit('ageWasEdited', this.userAge)
-             // eventBus.$emit('ageWasEdited', this.userAge); 
-             eventBus.changeAge(this.userAge);   // main.js de changeAge adli methodla iliskili
+             eventBus.$emit('ageWasEdited', this.userAge); 
+             //eventBus.changeAge(this.userAge);   // main.js de changeAge adli methodla iliskili
             }
         }
     }
